@@ -1,0 +1,11 @@
+# Local learning outputs generated per user/session
+.docs/
+study/
+
+# Dependencies / generated installs
+node_modules/
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example

@@ -1,0 +1,30 @@
+{
+  "name": "coding-mastery",
+  "version": "1.0.0",
+  "description": "Learn to code efficiently with AI Agents",
+  "keywords": [
+    "learn-to-code",
+    "ai-agents"
+  ],
+  "homepage": "https://github.com/mdaffailhami/coding-mastery#readme",
+  "bugs": {
+    "url": "https://github.com/mdaffailhami/coding-mastery/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mdaffailhami/coding-mastery.git"
+  },
+  "license": "ISC",
+  "author": "mdaffailhami.my.id",
+  "type": "module",
+  "main": "README.md",
+  "scripts": {
+    "ctx7": "dotenv -- npx ctx7",
+    "ctx7:library": "dotenv -- npx ctx7 library",
+    "ctx7:docs": "dotenv -- npx ctx7 docs"
+  },
+  "devDependencies": {
+    "ctx7": "latest",
+    "dotenv-cli": "^11.0.0"
+  }
+}
