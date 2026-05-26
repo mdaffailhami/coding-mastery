@@ -28,6 +28,11 @@ This installs the local tooling used by the workflow, including:
 
 ## Learning Workflow
 
+Choose one mode for each learning track:
+
+- **Foundation Mode:** learn the technology from first principles through concept maps, tiny drills, and checkpoints.
+- **Project Mode:** learn by building a real project where each milestone introduces the concepts needed for the next feature.
+
 ```text
 learning idea
   ↓
@@ -37,7 +42,7 @@ doc-ingest
   ↓
 roadmap-generator
   ↓
-project-scaffold, optional
+project-scaffold, optional in Project Mode
   ↓
 your implementation
   ↓
@@ -96,6 +101,15 @@ npx ctx7 login
 But `.env` + `CONTEXT7_API_KEY` + `dotenv-cli` is the recommended project convention.
 
 ## Example Prompt
+
+Foundation Mode:
+
+```text
+I want to learn SvelteKit from the beginning.
+Use official docs and create a foundation roadmap with tiny drills.
+```
+
+Project Mode:
 
 ```text
 I want to learn SvelteKit by building a personal finance tracker.
