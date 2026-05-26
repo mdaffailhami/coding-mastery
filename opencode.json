@@ -1,0 +1,73 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "Dev Tutor",
+  "lsp": true,
+  "skills": {
+    "paths": ["./.agents/skills"]
+  },
+  "agent": {
+    "build": {
+      "disable": true
+    },
+    "plan": {
+      "disable": true
+    },
+    "Dev Tutor": {
+      "description": "Dev Tutor — a world-class senior software engineer and elite technical educator.",
+      "mode": "primary",
+      "prompt": "{file:./AGENTS.md}"
+    }
+  },
+  "permission": {
+    "edit": "allow",
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
+    },
+    "bash": {
+      "*": "ask",
+      "mkdir *": "allow",
+      "npx tsc *": "allow",
+      "npx prettier *": "allow",
+      "npx eslint *": "allow",
+      "npm *": "allow",
+      "echo *": "allow",
+      "rm *": "allow",
+      "mv *": "allow",
+      "ls *": "allow",
+      "cat *": "allow",
+      "grep *": "allow",
+      "rg *": "allow",
+      "head *": "allow",
+      "tail *": "allow",
+      "wc *": "allow",
+      "stat *": "allow",
+      "file *": "allow",
+      "find *": "allow",
+      "sort *": "allow",
+      "git status *": "allow",
+      "git log *": "allow",
+      "git diff *": "allow",
+      "git branch *": "allow",
+      "git show *": "allow",
+      "git remote *": "allow",
+      "git describe *": "allow",
+      "git tag *": "allow",
+      "git fetch *": "allow",
+      "git pull *": "allow",
+      "git stash *": "allow",
+      "git checkout *": "allow",
+      "git switch *": "allow",
+      "git reflog *": "allow",
+      "git rev-parse *": "allow",
+      "git rev-list *": "allow",
+      "git add *": "deny",
+      "git commit *": "deny",
+      "git push *": "deny",
+      "git reset *": "deny",
+      "git revert *": "deny"
+    }
+  }
+}
