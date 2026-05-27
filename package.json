@@ -19,9 +19,9 @@
   "type": "module",
   "main": "README.md",
   "scripts": {
-    "ctx7": "dotenv -- npx ctx7",
-    "ctx7:library": "dotenv -- npx ctx7 library",
-    "ctx7:docs": "dotenv -- npx ctx7 docs"
+    "ctx7": "dotenv -- ctx7",
+    "ctx7:library": "dotenv -- ctx7 library",
+    "ctx7:docs": "dotenv -- ctx7 docs"
   },
   "devDependencies": {
     "ctx7": "latest",
