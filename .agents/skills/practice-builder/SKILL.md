@@ -23,6 +23,24 @@ Practice should be small enough to start now and real enough to review.
 8. Keep normal labs to 15-60 minutes unless the user asks for a larger challenge.
 9. For framework setup/API details, use `docs-grounding` first if not already grounded.
 10. If files/folders would help, ask consent before creating them.
+11. Lab project naming should match the artifact scope. If one runnable project will be reused across multiple milestones, use a stable project name like `study/<slug>/labs/<project-name>` and track milestone work inside it. Do not name a reusable project after a single milestone or transient concept.
+12. Use milestone-specific folders only for throwaway, isolated drills. For project-shaped learning, prefer one evolving app plus checkpoint/lab notes.
+
+## Lab Storage Conventions
+
+Recommended structure:
+
+```text
+study/<learning-slug>/labs/
+├── <project-name>/              # evolving app
+└── notes/                       # learner's curated notebook
+```
+
+Naming guidance:
+
+- Reused project: stable app name or a domain name.
+- Isolated drill: milestone/concept-specific name.
+- Avoid misleading names where the folder describes one milestone but contains work from other milestones.
 
 ## Scaffold Boundaries
 

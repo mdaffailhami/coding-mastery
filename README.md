@@ -34,14 +34,7 @@ Install dependencies:
 npm install
 ```
 
-Context7 helper scripts:
-
-```bash
-npm run ctx7:library -- "SvelteKit" "routing basics"
-npm run ctx7:docs -- /sveltejs/kit "routing basics"
-```
-
-For higher Context7 limits, copy `.env.example` to `.env` and set `CONTEXT7_API_KEY`.
+> For higher Context7 limits, copy `.env.example` to `.env` and set `CONTEXT7_API_KEY` with your Context7 API key from the [context7.com](https://context7.com).
 
 ## Learning Skill Architecture
 

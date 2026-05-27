@@ -41,14 +41,55 @@ Do not store secrets, credentials, private personal data, or unrelated project d
 - Mastery gate result changes.
 - User reports durable confusion/breakthrough.
 
-When a new track is created, ensure `plan.md` contains the canonical plan itself, not a pointer to chat.
+When a new track is created, ensure `plan.md` contains the canonical detailed plan itself, not a pointer to chat and not a separate sibling file.
 
 ## File Roles
 
-- `progress.md`: current milestone, completed milestones, blocker, next driver action.
+- `plan.md`: canonical detailed learning contract, milestone sequence, sub-milestones, artifact gates, and current handoff.
+- `progress.md`: current state first, then active lab, then reverse-chronological recent history. Keep the latest/current milestone at the top; do not append active labs in random/changelog order.
 - `decisions.md`: why the path, emphasis, scope, or evidence standard changed.
 - `checkpoints/<milestone>.md`: evidence, reasoning summary, decision.
 - `notes/`: concise concept notes and recurring gotchas.
+
+## `notes/` Policy
+
+Treat `notes/` as the learner's curated notebook.
+
+Write or update a note when any of these happen:
+
+- the learner asks a durable conceptual question;
+- the learner shows confusion about a distinction that will recur;
+- an artifact review reveals a reusable gotcha;
+- a concept becomes a prerequisite for later milestones;
+- the tutor gives a mental model the learner should be able to revisit.
+
+Prefer one focused note per concept. Keep notes short, learner-facing, and reusable. Do not write notes for every interaction, and do not store transient status in notes.
+
+## `progress.md` Structure
+
+Prefer this order:
+
+```markdown
+# [Track] Progress
+
+## Current State
+
+- **Current milestone:** ...
+- **Completed milestones:** ...
+- **Current blocker:** ...
+- **Next driver action:** ...
+
+## Active Lab: [latest/current]
+
+[current lab only]
+
+## Recent History
+
+### [most recent completed]
+### [older completed]
+```
+
+Do not keep multiple sections titled `Active Lab` for completed work. Move completed lab summaries to Recent History or checkpoint files.
 
 ## Output Format
 

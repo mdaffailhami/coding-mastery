@@ -29,8 +29,9 @@ A curriculum is not a calendar dump. It is a dependency-aware path from current 
 6. Dependency order matters: setup/structure → routing/composition → data read → mutation → integration → security/runtime → capstone.
 7. Every milestone includes a checkpoint standard tied to artifact evidence.
 8. Hand off the current milestone to `practice-builder`; do not leave the user with only a table.
-9. For durable learning tracks, the full plan belongs in `study/<learning-slug>/plan.md`. Do not create placeholder files that say “see chat”.
-10. Chat output should be a concise summary: created/updated file paths, active milestone, and next driver action. Do not paste the full milestone table in chat unless the user asks to preview it.
+9. For durable learning tracks, the full detailed plan belongs in `study/<learning-slug>/plan.md`.
+10. Prefer readable sectioned milestones over dense table-only plans. A summary table is optional; the canonical plan should include milestone sections with capability, primitives, artifact, and gate.
+11. Chat output should be a concise summary: created/updated file paths, active milestone, and next driver action. Do not paste the full milestone plan in chat unless the user asks to preview it.
 
 ## Output Format
 
@@ -42,7 +43,7 @@ Write the canonical curriculum to:
 study/<learning-slug>/plan.md
 ```
 
-The file must include the full milestone table and current milestone handoff.
+The file must include the full detailed milestone sequence and current milestone handoff. Avoid making the table the only source of detail.
 
 ### Chat Output
 
@@ -62,9 +63,15 @@ Only include the full table in chat if the user explicitly asks for it.
 - **Artifact Strategy:** [tiny labs / project / mixed]
 - **Schedule:** [milestone-based or timeline-mapped]
 
-| Milestone | Capability | New Primitives | Practice Artifact | Done Means | Gate |
-| --- | --- | --- | --- | --- | --- |
-| M1 | [capability] | [2-3 primitives] | [artifact] | [observable result] | [reasoning standard] |
+#### M1 — [Name]
+
+- **Capability:** [capability]
+- **Primitives:** [2-3 new primitives]
+- **Practice artifact:** [artifact]
+- **Done means:** [observable result]
+- **Gate:** [reasoning standard]
+
+Sub-milestones may be used when a concept naturally splits into smaller gates, e.g. M3a native forms, M3b named actions, M3c validation.
 
 ### Current Milestone Handoff
 
